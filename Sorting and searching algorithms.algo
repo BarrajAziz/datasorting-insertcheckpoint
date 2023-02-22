@@ -1,0 +1,13 @@
+ALGORITHM sorting
+VAR
+    current INTEGER := array[i];
+    j := i-1 ;
+BEGIN
+    FOR i FROM 1 TO array.lenght STEP 1  DO
+       WHILE (j>=0, & array[j]>current) DO
+        array[j+1]:= array[i];
+        j-1;
+        END_WHILE
+array[j+1]:=current
+    END_FOR
+END
